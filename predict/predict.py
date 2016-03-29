@@ -7,8 +7,6 @@ print("Loading Data")
 X = pandas.read_csv("data/test.csv")
 print("Loaded Data")
 
-print(X.describe())
-
 from sklearn.externals import joblib
 
 alg = joblib.load('alg.pkl')

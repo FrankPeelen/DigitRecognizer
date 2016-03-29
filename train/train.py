@@ -17,9 +17,9 @@ y = data["label"]
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=1)
 
 print("Training Algorithm")
-#alg = joblib.load('alg.pkl')
-alg = LogisticRegression(max_iter=250, multi_class='ovr', solver='lbfgs', verbose=1)
-alg.fit(X_train, y_train)
+alg = joblib.load('alg.pkl')
+#alg = LogisticRegression(max_iter=1000, multi_class='ovr', solver='lbfgs', verbose=1)
+#alg.fit(X_train, y_train)
 print("Trained Algorithm")
 
 print("iters = " + str(alg.n_iter_))
